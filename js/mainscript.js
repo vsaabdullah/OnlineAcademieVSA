@@ -1,0 +1,1 @@
+console.log('het bestand Mainscript.js is met succes geladen');
