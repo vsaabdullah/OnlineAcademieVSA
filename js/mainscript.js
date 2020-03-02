@@ -17,7 +17,7 @@ var vandaag = vraagDatum.getDate() + "/" + (vraagDatum.getMonth() + 1) + "/" + (
 var dagen= ["Zondag","Maandag","Dinsdag","Woensdag","Donderdag","Vrijdag","Zaterdag"];
 
 document.getElementById("mijnbedrijf").innerHTML = bedrijfsnaam + linebreak + bedrijfadres + linebreak+"BTW-nummer:"+btwnummer;
-document.getElementById("vandaag").innerHTML=vandaag +" "+ dagen[vraagDatum.getDay()];
+document.getElementById("vandaag").innerHTML= vandaag +" "+ dagen[vraagDatum.getDay()];
 
 var dagenVanDeWeek = new Array('Zondag','Maandag', 'Dinsdag', 'Woensdag', 'Donderdag', 'Vrijdag', 'Zaterdag');
 var day;
@@ -41,7 +41,7 @@ switch (new Date().getDay()) {
       day = "Vrijdag";
       break;
     case 6:
-      day = "Zaterdag";
+      day = "Saturday";
   }
   console.log('Eerste dag van de week: ' + day );
    
