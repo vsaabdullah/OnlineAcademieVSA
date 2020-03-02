@@ -14,10 +14,34 @@ var bedrijfadres = straatnaam +" "+ straatnummer +" "+ postcode +" "+ gemeente;
 var linebreak="<br>"
 var vraagDatum = new Date();
 var vandaag = vraagDatum.getDate() + "/" + (vraagDatum.getMonth() + 1) + "/" + (vraagDatum.getFullYear());
+var dagen= ["Zondag","Maandag","Dinsdag","Woensdag","Donderdag","Vrijdag","Zaterdag"];
 
 document.getElementById("mijnbedrijf").innerHTML = bedrijfsnaam + linebreak + bedrijfadres + linebreak+"BTW-nummer:"+btwnummer;
-document.getElementById("vandaag").innerHTML=vandaag ;
+document.getElementById("vandaag").innerHTML=vandaag +" "+ dagen[vraagDatum.getDay()];
 
-
-
+var dagenVanDeWeek = new Array('Zondag','Maandag', 'Dinsdag', 'Woensdag', 'Donderdag', 'Vrijdag', 'Zaterdag');
+var day;
+switch (new Date().getDay()) {
+    case 0:
+      day = "Zondag";
+      break;
+    case 1:
+      day = "Maandag";
+      break;
+    case 2:
+       day = "Dinsdag";
+      break;
+    case 3:
+      day = "Woensdag";
+      break;
+    case 4:
+      day = "Donderdag";
+      break;
+    case 5:
+      day = "Vrijdag";
+      break;
+    case 6:
+      day = "Zaterdag";
+  }
+  console.log('Eerste dag van de week: ' + day );
    
