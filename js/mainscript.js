@@ -85,4 +85,4 @@ switch (new Date().getMonth()) {
     
   }
  
-  document.getElementById("vandaag").innerHTML= day + " " + vraagDatum.getDate() + " " + maand + " " + vraagDatum.getFullYear();
+  document.getElementById("vandaag").innerHTML= day + "," + " " + vraagDatum.getDate() + " " + maand + " " + vraagDatum.getFullYear();
