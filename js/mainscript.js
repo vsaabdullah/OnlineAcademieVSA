@@ -12,8 +12,12 @@ var bedrijfslandcode="BE";
 var btwnummer= bedrijfslandcode + btwcijfers;
 var bedrijfadres = straatnaam +" "+ straatnummer +" "+ postcode +" "+ gemeente;
 var linebreak="<br>"
+var vraagDatum = new Date();
+var vandaag = vraagDatum.getDate() + "/" + (vraagDatum.getMonth() + 1) + "/" + (vraagDatum.getFullYear());
 
-document.getElementById("mijnbedrijf").innerHTML = bedrijfsnaam + linebreak + bedrijfadres + linebreak+"BTW-nummer:"+btwnummer;;
+document.getElementById("mijnbedrijf").innerHTML = bedrijfsnaam + linebreak + bedrijfadres + linebreak+"BTW-nummer:"+btwnummer;
+document.getElementById("vandaag").innerHTML=vandaag ;
+
 
 
    
