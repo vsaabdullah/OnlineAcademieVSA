@@ -17,7 +17,7 @@ var vandaag = vraagDatum.getDate() + "/" + (vraagDatum.getMonth() + 1) + "/" + (
 var dagen= ["Zondag","Maandag","Dinsdag","Woensdag","Donderdag","Vrijdag","Zaterdag"];
 
 document.getElementById("mijnbedrijf").innerHTML = bedrijfsnaam + linebreak + bedrijfadres + linebreak+"BTW-nummer:"+btwnummer;
-document.getElementById("vandaag").innerHTML= vandaag +" "+ dagen[vraagDatum.getDay()];
+
 
 var dagenVanDeWeek = new Array('Zondag','Maandag', 'Dinsdag', 'Woensdag', 'Donderdag', 'Vrijdag', 'Zaterdag');
 var day;
@@ -44,4 +44,45 @@ switch (new Date().getDay()) {
       day = "Saturday";
   }
   console.log('Eerste dag van de week: ' + day );
-   
+
+  var maanden = ['januari ','februari ', 'maart', 'april', 'mei', 'juni', 'juli','augustus ','september ', 'oktober', 'november','december'];
+var maand;
+switch (new Date().getMonth()) {
+    case 0:
+      maand = maanden[0]
+      break;
+    case 1:
+      maand = maanden[1]
+      break;
+    case 2:
+      maand = maanden[2]
+      break;
+    case 3:
+      maand = maanden[3]
+      break;
+    case 4:
+      maand = maanden[4]
+      break;
+    case 5:
+      maand = maanden[5]
+      break;
+    case 6:
+      maand = maanden[6]
+      case 7:
+      maand = maanden[7]
+      break;
+    case 8:
+      maand = maanden[8]
+      break;
+    case 9:
+      maand = maanden[9]
+      break;
+    case 10:
+      maand = maanden[10]
+      break;
+    case 11:
+      maand = maanden[11]
+    
+  }
+ 
+  document.getElementById("vandaag").innerHTML= day + " " + vraagDatum.getDate() + " " + maand + " " + vraagDatum.getFullYear();
